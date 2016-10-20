@@ -7,6 +7,10 @@ The financial crisis of 2007–09, also known as the global financial crisis and
 
 Firts of all is to become familiarized with the data doing some exploratory data analysis. With enough knowledge i can extract some ideas and scratch them.
 
+My first try was to show how many loans was granted each year. For that purpose I thought in a simple bar chart, removing first and last year (2005 and 2014) because it doesn't have complete info about the year. The main idea was setted and it worked but i wanted to show more info and I added two more factors to the graph: the listing category and the amount average of the loan.
+
+Too many listing categories could be shown so I just selected what I thought there were more significative: Business, Medical/Dental and Vacation. This graph (tagged as version 1) shows two data series, one with the bar chart of the number of loans granted by year and listing category and another one with the lines representing the evolution of the amount average of each year/category.
+
 ## Feedback
 
 ## Resources
