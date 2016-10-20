@@ -11,6 +11,8 @@ My first try was to show how many loans was granted each year. For that purpose 
 
 Too many listing categories could be shown so I just selected what I thought there were more significative: Business, Medical/Dental and Vacation. This graph (tagged as version 1) shows two data series, one with the bar chart of the number of loans granted by year and listing category and another one with the lines representing the evolution of the amount average of each year/category.
 
+Asking for feedback I realized that my main concept was clear but some things must be updated to show what I actually want. I changed the bars and lines and create a new bubble plot with the same concepts. The main difference is that dissapears the two mixed plots and adds just one. This is a suggestion learned in the course when you want two show more than two variables in the same graph.
+
 ## Feedback
 
 ## Resources
