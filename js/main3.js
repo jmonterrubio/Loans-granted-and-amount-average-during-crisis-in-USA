@@ -9,13 +9,10 @@ function printGraph(file) {
 function draw(data) {
     // Page layout
     var margin = 155,
-        width = 1450 - margin,
+        width = 1200 - margin,
         height = 600 - margin,
         radius = 3,
         color = "blue";
-    d3.select("body")
-        .append("h2")
-        .text("Loans granted and average amount during crisis in USA");
     // Chart layout
     var svg = d3.select("body")
         .append("svg")
@@ -46,7 +43,15 @@ function draw(data) {
         ];
     };
 
-    var myLegend = myChart.addLegend(1400, 100, 60, 300, "Right", bubbles);
+    var myLegend = myChart.addLegend(1150, 100, 60, 300, "Right", bubbles);
+    svg
+        .append("text")
+        .attr("x", 140)
+        .attr("y", 50)
+        .style("font-family", "sans-serif")
+        .style("font-size", "10px")
+        .style("color", "Black")
+        .text("* Bubble size reflects the average loan amount");
     myChart.defaultColors = [
         new dimple.color("#3498db", "#2980b9", 1), // blue
         new dimple.color("#e74c3c", "#c0392b", 1), // red
@@ -61,7 +66,7 @@ function draw(data) {
         .data(["Click legend to", "show/hide category:"])
         .enter()
         .append("text")
-        .attr("x", 1350)
+        .attr("x", 1100)
         .attr("y", function (d, i) { return 80 + i * 14; })
         .style("font-family", "sans-serif")
         .style("font-size", "10px")
